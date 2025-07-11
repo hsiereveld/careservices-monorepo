@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  
+  body {
+    @apply text-text-primary font-sans bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-text-primary;
+  }
+
+  /* Larger text for better readability for seniors */
+  p, li, a, button, input, select, textarea {
+    @apply text-base;
+  }
+
+  /* Better readability for h2 on dark backgrounds */
+  .bg-secondary-700 h2,
+  .bg-secondary-800 h2,
+  .bg-secondary-900 h2,
+  [style*="background-color: #1F4D44"] h2,
+  [style*="background: #1F4D44"] h2,
+  [class*="bg-secondary-700"] h2,
+  [class*="bg-secondary-800"] h2,
+  [class*="bg-secondary-900"] h2 {
+    @apply text-white;
+  }
+
+  /* Also apply to elements with the specific color #1F4D44 */
+  .dark-bg h2,
+  .bg-\[\#1F4D44\] h2 {
+    @apply text-white;
+  }
+
+  /* General rule for any dark background */
+  .bg-gray-800 h2,
+  .bg-gray-900 h2,
+  .bg-black h2 {
+    @apply text-white;
+  }
+
+  /* Specific targeting for gradient backgrounds that include dark colors */
+  .bg-gradient-to-r h2,
+  [class*="from-primary-5"] h2,
+  [class*="from-primary-6"] h2,
+  [class*="to-primary-6"] h2,
+  [class*="bg-primary-5"] h2,
+  [class*="bg-primary-6"] h2 {
+    @apply text-white;
+  }
+
+  /* Target specific dashboard elements */
+  .bg-gradient-to-r.from-primary-500 h2,
+  .bg-gradient-to-r.from-primary-600 h2,
+  .bg-primary-500 h2,
+  .bg-primary-600 h2 {
+    @apply text-white;
+  }
+
+  /* Target elements that are positioned over images */
+  .absolute h2,
+  .absolute h3,
+  .absolute h4 {
+    @apply text-white;
+  }
+
+  /* Specific for service cards with background images */
+  .group .relative h2,
+  .group .relative h3,
+  .group .relative h4 {
+    @apply text-white;
+  }
+
+  /* For elements with gradient overlays on images */
+  .bg-gradient-to-t h2,
+  .bg-gradient-to-b h2,
+  [class*="from-black"] h2,
+  [class*="to-black"] h2 {
+    @apply text-white;
+  }
+
+  /* Improve readability for h5 titles on colored backgrounds */
+  .text-green-800, 
+  .text-blue-800, 
+  .text-red-800, 
+  .text-purple-800, 
+  .text-yellow-800,
+  .text-primary-800 {
+    @apply font-semibold;
+  }
+
+  /* Specific fixes for colored panels with h5 headings */
+  .bg-green-50 h5,
+  .bg-blue-50 h5,
+  .bg-red-50 h5,
+  .bg-yellow-50 h5,
+  .bg-purple-50 h5,
+  .bg-primary-50 h5,
+  .bg-secondary-50 h5,
+  .bg-accent-50 h5 {
+    @apply font-semibold;
+  }
+
+  /* Improve contrast for text in colored panels */
+  .bg-primary-50 .text-primary-700,
+  .bg-primary-50 .text-primary-800,
+  .bg-green-50 .text-green-700,
+  .bg-green-50 .text-green-800,
+  .bg-blue-50 .text-blue-700,
+  .bg-blue-50 .text-blue-800,
+  .bg-red-50 .text-red-700,
+  .bg-red-50 .text-red-800,
+  .bg-yellow-50 .text-yellow-700,
+  .bg-yellow-50 .text-yellow-800,
+  .bg-purple-50 .text-purple-700,
+  .bg-purple-50 .text-purple-800 {
+    @apply font-medium;
+  }
+
+  /* Text on dark green background - FIXED to only target non-button elements */
+  [style*="background-color: #246A6A"] *:not(button),
+  [style*="background: #246A6A"] *:not(button),
+  .bg-\[\#246A6A\] *:not(button),
+  .bg-primary-600 *:not(button):not(.text-white) {
+    color: #e5e7eb;
+  }
+  
+  /* Make subscription titles match price color */
+  .bg-gradient-to-r.from-primary-500.to-primary-600 h3,
+  .bg-gradient-to-r.from-primary-500.to-primary-600 .text-3xl,
+  .bg-gradient-to-r.from-primary-500.to-primary-600 .font-bold {
+    @apply text-white;
+  }
+  
+  /* Make subscription plan titles match price color */
+  .bg-white .font-bold.text-text-primary,
+  .bg-white h5.font-semibold,
+  .bg-white h3.text-xl.font-bold {
+    @apply text-primary-600;
+  }
+  
+  /* Ensure buttons with text-white class keep their white text */
+  button.text-white,
+  a.text-white,
+  .btn.text-white,
+  .text-white {
+    color: white !important;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary-500 hover:bg-primary-600;
+  }
+  
+  .btn-secondary {
+    @apply text-primary-500 bg-white hover:bg-primary-50 border-primary-500;
+  }
+
+  .btn-accent {
+    @apply text-white bg-primary-400 hover:bg-primary-500;
+  }
+
+  /* Focus styles for accessibility */
+  .focus-visible:focus {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+
+  /* Dark background utility class */
+  .dark-bg {
+    background-color: #1F4D44;
+  }
+
+  /* Ensure h2 elements are readable on dark backgrounds */
+  .dark-bg h2,
+  .dark-bg .text-text-primary {
+    @apply text-white;
+  }
+
+  /* Force white text on any element with primary-500 or primary-600 background */
+  .bg-primary-500 h2,
+  .bg-primary-600 h2,
+  .bg-primary-700 h2,
+  .bg-primary-800 h2,
+  .bg-primary-900 h2 {
+    @apply text-white;
+  }
+
+  /* Target gradient backgrounds specifically */
+  [class*="bg-gradient-to"] h2 {
+    @apply text-white;
+  }
+
+  /* Utility class for text over images */
+  .text-over-image {
+    @apply text-white;
+  }
+
+  /* Utility class for better contrast on images */
+  .image-text-contrast h2,
+  .image-text-contrast h3,
+  .image-text-contrast h4,
+  .image-text-contrast p {
+    @apply text-white;
+  }
+
+  /* Service card specific styling */
+  .service-card .relative h2,
+  .service-card .relative h3 {
+    @apply text-white;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    backdrop-filter: blur(1px);
+  }
+
+  /* Improved readability for panel headings */
+  .panel-heading {
+    @apply font-semibold;
+  }
+}
+
+/* Custom styles for date picker to make it more senior-friendly */
+.react-datepicker {
+  font-size: 1rem !important;
+  font-family: inherit !important;
+}
+
+.react-datepicker__header {
+  background-color: #2d8484 !important; /* Updated to match logo green */
+  color: white !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: white !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: #2d8484 !important; /* Updated to match logo green */
+}
+
+.react-datepicker__day:hover {
+  background-color: #E8F0F0 !important; /* primary-50 */
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #75A5A5 !important; /* primary-300 */
+}
+
+.react-datepicker__navigation {
+  top: 12px !important;
+}
+
+.react-datepicker__day {
+  margin: 0.2rem !important;
+  padding: 0.2rem !important;
+  border-radius: 0.3rem !important;
+}

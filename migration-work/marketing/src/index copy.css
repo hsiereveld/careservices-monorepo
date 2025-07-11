@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+  
+  body {
+    @apply text-text-primary font-sans bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-text-primary;
+  }
+
+  /* Larger text for better readability for seniors */
+  p, li, a, button, input, select, textarea {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary-500 hover:bg-primary-600;
+  }
+  
+  .btn-secondary {
+    @apply text-primary-500 bg-white hover:bg-primary-50 border-primary-500;
+  }
+
+  .btn-accent {
+    @apply text-white bg-primary-400 hover:bg-primary-500;
+  }
+
+  /* Focus styles for accessibility */
+  .focus-visible:focus {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+}
+
+/* Custom styles for date picker to make it more senior-friendly */
+.react-datepicker {
+  font-size: 1rem !important;
+  font-family: inherit !important;
+}
+
+.react-datepicker__header {
+  background-color: #276156 !important; /* primary-500 */
+  color: white !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: white !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: #276156 !important; /* primary-500 */
+}
+
+.react-datepicker__day:hover {
+  background-color: #EAF7F1 !important; /* primary-50 */
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #5D9573 !important; /* primary-400 */
+}
+
+.react-datepicker__navigation {
+  top: 12px !important;
+}
+
+.react-datepicker__day {
+  margin: 0.2rem !important;
+  padding: 0.2rem !important;
+  border-radius: 0.3rem !important;
+}

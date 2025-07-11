@@ -1,0 +1,256 @@
+/* Care & Service – Design Tokens & Utilities  */
+
+/* ----------------------------------------
+   1. Root Tokens – Light Mode
+----------------------------------------- */
+
+:root {
+  --font-size: 14px;
+
+  /* Core Palette */
+  --care-primary: #4a9b8e;
+  --care-primary-light: #6bb6ab;
+  --care-secondary-dark: #2d7a6b;
+  --care-background-light: #e8f4f2;
+  --care-success: #4caf50;
+  --care-warning: #ff9800;
+  --care-error: #f44336;
+
+  /* Design System */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: var(--care-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--care-background-light);
+  --secondary-foreground: var(--care-secondary-dark);
+  --muted: #f5f5f5;
+  --muted-foreground: #6b7280;
+  --accent: var(--care-primary-light);
+  --accent-foreground: #ffffff;
+  --destructive: var(--care-error);
+  --destructive-foreground: #ffffff;
+  --border: rgba(74, 155, 142, 0.2);
+  --input: transparent;
+  --input-background: #f9f9f9;
+  --switch-background: #d1d5db;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: var(--care-primary);
+
+  /* Chart tokens */
+  --chart-1: var(--care-primary);
+  --chart-2: var(--care-primary-light);
+  --chart-3: var(--care-secondary-dark);
+  --chart-4: var(--care-success);
+  --chart-5: var(--care-warning);
+
+  /* Borders */
+  --radius: 0.5rem;
+
+  /* Sidebar */
+  --sidebar: var(--care-background-light);
+  --sidebar-foreground: var(--care-secondary-dark);
+  --sidebar-primary: var(--care-primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ffffff;
+  --sidebar-accent-foreground: var(--care-secondary-dark);
+  --sidebar-border: rgba(74, 155, 142, 0.2);
+  --sidebar-ring: var(--care-primary);
+
+  /* Type scale (desktop) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Accessibility tokens */
+  --touch-target-min: 44px;
+  --touch-target-recommended: 48px;
+
+  /* Breakpoints (for reference) */
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Device paddings */
+  --mobile-header-height: 64px;
+  --mobile-nav-height: 60px;
+  --mobile-padding: 1rem;
+  --mobile-margin: 0.75rem;
+  --mobile-border-radius: 0.75rem;
+
+  --tablet-padding: 1.5rem;
+  --tablet-margin: 1rem;
+  --tablet-border-radius: 0.5rem;
+
+  --desktop-padding: 2rem;
+  --desktop-margin: 1.5rem;
+}
+
+/* ----------------------------------------
+   2. Media Queries – Mobile & Tablet
+----------------------------------------- */
+
+@media (max-width: 768px) {
+  :root {
+    --font-size: 16px; /* Prevent zoom on iOS */
+    --radius: var(--mobile-border-radius);
+
+    --text-xs: 0.8125rem;
+    --text-sm: 0.9375rem;
+    --text-base: 1.0625rem;
+    --text-lg: 1.1875rem;
+    --text-xl: 1.375rem;
+    --text-2xl: 1.625rem;
+    --text-3xl: 2rem;
+    --text-4xl: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --radius: var(--tablet-border-radius);
+  }
+}
+
+/* ----------------------------------------
+   3. Dark Mode
+----------------------------------------- */
+
+.dark {
+  --background: #0f1419;
+  --foreground: #e5e7eb;
+  --card: #1f2937;
+  --card-foreground: #e5e7eb;
+  --popover: #1f2937;
+  --popover-foreground: #e5e7eb;
+  --primary: var(--care-primary-light);
+  --primary-foreground: #0f1419;
+  --secondary: #374151;
+  --secondary-foreground: #e5e7eb;
+  --muted: #374151;
+  --muted-foreground: #9ca3af;
+  --accent: var(--care-primary);
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(107, 182, 171, 0.2);
+  --input: #374151;
+  --ring: var(--care-primary-light);
+  --sidebar: #1f2937;
+  --sidebar-foreground: #e5e7eb;
+  --sidebar-primary: var(--care-primary-light);
+  --sidebar-primary-foreground: #0f1419;
+  --sidebar-accent: #374151;
+  --sidebar-accent-foreground: #e5e7eb;
+  --sidebar-border: rgba(107, 182, 171, 0.2);
+  --sidebar-ring: var(--care-primary-light);
+}
+
+/* ----------------------------------------
+   4. Utility Classes (optional – vanilla CSS)
+----------------------------------------- */
+
+.text-care-primary { color: var(--care-primary) !important; }
+.text-care-primary-light { color: var(--care-primary-light) !important; }
+.text-care-secondary-dark { color: var(--care-secondary-dark) !important; }
+.bg-care-primary { background-color: var(--care-primary) !important; color: #fff; }
+.bg-care-primary-light { background-color: var(--care-primary-light) !important; color: #fff; }
+.bg-care-secondary-dark { background-color: var(--care-secondary-dark) !important; color: #fff; }
+.bg-care-background-light { background-color: var(--care-background-light) !important; }
+.border-care-primary { border-color: var(--care-primary) !important; }
+.ring-care-primary { outline-color: var(--care-primary); outline-width: 2px; outline-style: solid; }
+
+/* Touch targets */
+.touch-target-sm { min-height: var(--touch-target-min); min-width: var(--touch-target-min); }
+.touch-target { min-height: var(--touch-target-recommended); min-width: var(--touch-target-recommended); }
+
+/* Spacing helpers */
+.gap-mobile { gap: 0.75rem; }
+.gap-tablet { gap: 1rem; }
+.gap-desktop { gap: 1.5rem; }
+
+/* Safe area */
+.safe-top { padding-top: max(1rem, env(safe-area-inset-top)); }
+.safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+.safe-left { padding-left: max(1rem, env(safe-area-inset-left)); }
+.safe-right { padding-right: max(1rem, env(safe-area-inset-right)); }
+
+/* Full height */
+.min-h-screen-safe {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* ----------------------------------------
+   5. Base Element Resets / Enhancements
+----------------------------------------- */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* iOS tap highlight removal */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --primary: #000000;
+    --border: #000000;
+  }
+  * { box-shadow: none !important; }
+  body { font-size: 12pt; line-height: 1.4; }
+  h1 { font-size: 18pt; }
+  h2 { font-size: 16pt; }
+  h3 { font-size: 14pt; }
+  h4, h5, h6 { font-size: 12pt; }
+}

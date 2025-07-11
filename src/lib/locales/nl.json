@@ -1,0 +1,80 @@
+{
+  "booking": {
+    "title": "Boek een Dienst",
+    "subtitle": "Vind en boek de perfecte zorg- en dienstverlening",
+    "categories": {
+      "title": "Kies een Categorie",
+      "subtitle": "Selecteer het type dienst dat u nodig heeft"
+    },
+    "services": {
+      "title": "Beschikbare Diensten",
+      "subtitle": "Kies uit onze professionele dienstverleners",
+      "price": "Prijs",
+      "duration": "Duur",
+      "rating": "Beoordeling",
+      "bookNow": "Nu Boeken"
+    },
+    "providers": {
+      "title": "Beschikbare Professionals",
+      "subtitle": "Selecteer uw voorkeur professional",
+      "experience": "Ervaring",
+      "specializations": "Specialisaties",
+      "select": "Selecteren"
+    },
+    "calendar": {
+      "title": "Kies Datum en Tijd",
+      "subtitle": "Selecteer een beschikbare tijd",
+      "date": "Datum",
+      "time": "Tijd",
+      "available": "Beschikbaar",
+      "unavailable": "Niet beschikbaar"
+    },
+    "form": {
+      "title": "Boekingsgegevens",
+      "subtitle": "Vul uw gegevens in",
+      "name": "Naam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "address": "Adres",
+      "notes": "Opmerkingen",
+      "submit": "Bevestig Boeking"
+    },
+    "confirmation": {
+      "title": "Boeking Bevestigd",
+      "subtitle": "Uw afspraak is succesvol gepland",
+      "bookingId": "Boekingsnummer",
+      "date": "Datum",
+      "time": "Tijd",
+      "provider": "Professional",
+      "service": "Dienst",
+      "total": "Totaal",
+      "nextSteps": "Volgende Stappen"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "success": "Succesvol",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "search": "Zoeken",
+    "filter": "Filter",
+    "sort": "Sorteren"
+  },
+  "navigation": {
+    "home": "Home",
+    "booking": "Boeken",
+    "services": "Diensten",
+    "about": "Over Ons",
+    "contact": "Contact",
+    "login": "Inloggen",
+    "signup": "Registreren",
+    "profile": "Profiel",
+    "dashboard": "Dashboard"
+  }
+} 

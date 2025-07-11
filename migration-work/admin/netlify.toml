@@ -1,0 +1,29 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+# Environment variables die je moet instellen in Netlify dashboard:
+# VITE_SUPABASE_URL = [jouw Supabase project URL]
+# VITE_SUPABASE_ANON_KEY = [jouw Supabase anon key]

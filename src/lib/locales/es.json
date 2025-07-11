@@ -1,0 +1,80 @@
+{
+  "booking": {
+    "title": "Reservar un Servicio",
+    "subtitle": "Encuentra y reserva el cuidado y servicio perfecto",
+    "categories": {
+      "title": "Elige una Categoría",
+      "subtitle": "Selecciona el tipo de servicio que necesitas"
+    },
+    "services": {
+      "title": "Servicios Disponibles",
+      "subtitle": "Elige entre nuestros proveedores profesionales",
+      "price": "Precio",
+      "duration": "Duración",
+      "rating": "Calificación",
+      "bookNow": "Reservar Ahora"
+    },
+    "providers": {
+      "title": "Profesionales Disponibles",
+      "subtitle": "Selecciona tu profesional preferido",
+      "experience": "Experiencia",
+      "specializations": "Especializaciones",
+      "select": "Seleccionar"
+    },
+    "calendar": {
+      "title": "Elige Fecha y Hora",
+      "subtitle": "Selecciona una hora disponible",
+      "date": "Fecha",
+      "time": "Hora",
+      "available": "Disponible",
+      "unavailable": "No disponible"
+    },
+    "form": {
+      "title": "Detalles de la Reserva",
+      "subtitle": "Completa tu información",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "notes": "Notas",
+      "submit": "Confirmar Reserva"
+    },
+    "confirmation": {
+      "title": "Reserva Confirmada",
+      "subtitle": "Tu cita ha sido programada exitosamente",
+      "bookingId": "ID de Reserva",
+      "date": "Fecha",
+      "time": "Hora",
+      "provider": "Profesional",
+      "service": "Servicio",
+      "total": "Total",
+      "nextSteps": "Próximos Pasos"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "booking": "Reservar",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "profile": "Perfil",
+    "dashboard": "Panel"
+  }
+} 

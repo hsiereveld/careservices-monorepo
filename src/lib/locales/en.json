@@ -1,0 +1,80 @@
+{
+  "booking": {
+    "title": "Book a Service",
+    "subtitle": "Find and book the perfect care and service",
+    "categories": {
+      "title": "Choose a Category",
+      "subtitle": "Select the type of service you need"
+    },
+    "services": {
+      "title": "Available Services",
+      "subtitle": "Choose from our professional service providers",
+      "price": "Price",
+      "duration": "Duration",
+      "rating": "Rating",
+      "bookNow": "Book Now"
+    },
+    "providers": {
+      "title": "Available Professionals",
+      "subtitle": "Select your preferred professional",
+      "experience": "Experience",
+      "specializations": "Specializations",
+      "select": "Select"
+    },
+    "calendar": {
+      "title": "Choose Date and Time",
+      "subtitle": "Select an available time slot",
+      "date": "Date",
+      "time": "Time",
+      "available": "Available",
+      "unavailable": "Unavailable"
+    },
+    "form": {
+      "title": "Booking Details",
+      "subtitle": "Fill in your information",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "notes": "Notes",
+      "submit": "Confirm Booking"
+    },
+    "confirmation": {
+      "title": "Booking Confirmed",
+      "subtitle": "Your appointment has been successfully scheduled",
+      "bookingId": "Booking ID",
+      "date": "Date",
+      "time": "Time",
+      "provider": "Professional",
+      "service": "Service",
+      "total": "Total",
+      "nextSteps": "Next Steps"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+  "navigation": {
+    "home": "Home",
+    "booking": "Book",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "signup": "Sign Up",
+    "profile": "Profile",
+    "dashboard": "Dashboard"
+  }
+} 

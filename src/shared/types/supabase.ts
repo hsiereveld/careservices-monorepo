@@ -1,0 +1,1 @@
+export type { Database } from '../../../packages/types/supabase.types'; 
